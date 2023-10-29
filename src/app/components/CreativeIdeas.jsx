@@ -1,18 +1,18 @@
 'use client'
-import { useState } from 'react';
-import data from './assets/ideasData.json';
+import { useState } from 'react'
+import data from './assets/ideasData.json'
 
 export default function CreativeIdeas() {
-  const industryOptions = Object.keys(data.industries);
-  const [selectedIndustry, setSelectedIndustry] = useState('Technology');
-  const categoriesForSelectedIndustry = data.industries[selectedIndustry];
+  const industryOptions = Object.keys(data.industries)
+  const [selectedIndustry, setSelectedIndustry] = useState('Technology')
+  const categoriesForSelectedIndustry = data.industries[selectedIndustry]
 
   return (
     <div>
       <div>
         <label htmlFor="industrySelect">Select an Industry:</label>
         <select id="industrySelect" value="Technology">
-        {industryOptions.map((industry) => (
+          {industryOptions.map((industry) => (
             <option key={industry} value={industry}>
               {industry}
             </option>
@@ -33,5 +33,5 @@ export default function CreativeIdeas() {
         <button>Show Ideas</button>
       </div>
     </div>
-  );
+  )
 }
