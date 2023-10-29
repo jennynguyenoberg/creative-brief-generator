@@ -1,0 +1,10 @@
+# Ignore specific files
+next.config.js
+package.json
+package-lock.json
+eslintrc.json
+jsconfig.jsconfig
+
+# Ignore a directory and its contents
+node_modules/
+dist/
