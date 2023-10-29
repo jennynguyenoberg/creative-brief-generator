@@ -1,17 +1,18 @@
+import data from './assets/ideasData.json'
+
 export default function CreativeIdeas() {
+  const industryOptions = Object.keys(data.industries);
+  
   return (
     <div>
       <div>
         <label htmlFor="industrySelect">Select an Industry:</label>
         <select id="industrySelect" value="Technology">
-          <option value="Technology">Technology</option>
-          <option value="Food">Food</option>
-          <option value="Fashion">Fashion</option>
-          <option value="Entertainment">Entertainment</option>
-          <option value="Sports">Sports</option>
-          <option value="Education">Education</option>
-          <option value="Travel">Travel</option>
-          <option value="Random">Random</option>
+        {industryOptions.map((industry) => (
+            <option key={industry} value={industry}>
+              {industry}
+            </option>
+          ))}
         </select>
       </div>
       <div>
