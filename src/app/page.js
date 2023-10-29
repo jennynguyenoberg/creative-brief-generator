@@ -1,8 +1,11 @@
+// import styles from './page.module.css'
+import CreativeIdeas from "./components/CreativeIdeas";
+
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <div>
-        <h1>Hej</h1>
+        <CreativeIdeas />
       </div>
     </main>
   )
