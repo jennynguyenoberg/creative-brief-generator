@@ -1,8 +1,12 @@
-import data from './assets/ideasData.json'
+'use client'
+import { useState } from 'react';
+import data from './assets/ideasData.json';
 
 export default function CreativeIdeas() {
   const industryOptions = Object.keys(data.industries);
-  
+  const [selectedIndustry, setSelectedIndustry] = useState('Technology');
+  const categoriesForSelectedIndustry = data.industries[selectedIndustry];
+
   return (
     <div>
       <div>
@@ -17,11 +21,12 @@ export default function CreativeIdeas() {
       </div>
       <div>
         <label htmlFor="categorySelect">Select a Category:</label>
-        <select id="categorySelect" value="Technology">
-          <option value="Logo Design">Logo Design</option>
-          <option value="Website">Website</option>
-          <option value="Brand Identity">Brand Identity</option>
-          <option value="Illustration">Illustration</option>
+        <select id="categorySelect" value="Logo Design">
+          {categoriesForSelectedIndustry.map((category) => (
+            <option key={category.category} value={category.category}>
+              {category.category}
+            </option>
+          ))}
         </select>
       </div>
       <div>
