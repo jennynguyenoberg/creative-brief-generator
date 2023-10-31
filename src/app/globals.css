@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Fasthand&family=Inter&family=Koulen&family=Syne:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary colors */
+  --bg-c-light-pink: #F9DCD7;
+  --bg-c-salmon-pink: #FEBAAF;
+  --c-blue: #1964F6;
+  --c-red: #F15A5A;
+  --c-gray: #A9A7A7;
+
+  /* Font styles */
+  --font-heading: 'Koulen', sans-serif;
+  --font-subheading: 'Syne', sans-serif;
+  --font-ingress: 'Inter', sans-serif;
+  --font-body-copy: 'EB Garamond', serif;
+  --font-handwriting: 'Fasthand', cursive;
+
+  /* Font sizes */
+  --fs-heading: 1.3rem;
+  --fs-subheading: 1rem;
+  --fs-paragraph-L: 3rem;
+  --fs-paragraph-M: 0.82rem;
+  --fs-paragraph-S: 0.76rem;
+}
+
+body {
+  background-color: var(--bg-c-light-pink);
+  color: var(--c-blue);
+}
+
+h1 {
+  font-size: var(--fs-heading);
+}
+
+h2 {
+  font-size: var(--fs-subheading);
+}
+
+h3 {
+  font-size: var(--fs-paragraph-L);
+}
+
+p {
+  font-size: var(--fs-paragraph-M);
+  font-family: var(--font-body-copy);
+}
+
+span {
+  font-size: var(--fs-paragraph-S);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+button {
+  /* Styling for ALL dropdown buttons */
+  background-color: var(--bg-c-light-pink);
+  border-style: none;
+  color: var(--c-blue);
+  font-family: var(--font-subheading);
+  font-size: var(--fs-paragraph-S);
+  font-weight: 600;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+select {
+  background-color: var(--bg-c-light-pink);
+  border-style: none;
+  color: var(--c-blue);
+  font-family: var(--font-subheading);
+}
+
+select:focus { 
+  outline: none; 
+}
