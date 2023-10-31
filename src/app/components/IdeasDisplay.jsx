@@ -1,3 +1,5 @@
+import styles from './styles.module.css'
+
 export default function IdeasDisplay({
   showIdeas,
   selectedIndustry,
@@ -14,7 +16,7 @@ export default function IdeasDisplay({
         <span>You should</span>
         <p>{currentIdea}</p>
         <span>
-          You have {selectedCategoryDeadline} days to finish until the deadline.
+          You have<span className={styles.circle}>{selectedCategoryDeadline}</span>days to finish until the deadline.
         </span>
       </div>
     );

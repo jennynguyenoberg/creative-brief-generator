@@ -1,0 +1,6 @@
+.circle {
+  border-radius: 10px;
+  border: 1px solid var(--c-blue);
+  margin: 0 0.2rem;
+  padding: .1rem .5rem;
+}

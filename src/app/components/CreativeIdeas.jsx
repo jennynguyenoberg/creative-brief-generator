@@ -3,6 +3,7 @@ import { useState } from 'react'
 import data from './assets/ideasData.json'
 import IdeasDisplay from '../components/IdeasDisplay'
 import Button from './Button'
+import styles from './styles.module.css'
 
 export default function CreativeIdeas() {
   const [selectedIndustry, setSelectedIndustry] = useState('Technology')
@@ -60,7 +61,7 @@ export default function CreativeIdeas() {
         <div>Logo</div>
         <div>Menu</div>
       </nav>
-      <div>
+      <div className={styles.leftContainer}>
         <div>
           <label htmlFor="industrySelect">Industry</label>
           <select
@@ -91,7 +92,7 @@ export default function CreativeIdeas() {
           </select>
         </div>
       </div>
-      <div>
+      <div className={styles.rightContainer}>
         <label>Creative idea</label>
         <IdeasDisplay
           showIdeas={showIdeas}
