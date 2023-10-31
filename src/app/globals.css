@@ -8,25 +8,25 @@
 
 :root {
   /* Primary colors */
-  --bg-c-light-pink: #F9DCD7;
-  --bg-c-salmon-pink: #FEBAAF;
-  --c-blue: #1964F6;
-  --c-red: #F15A5A;
-  --c-gray: #A9A7A7;
+  --bg-c-light-pink: #f9dcd7;
+  --bg-c-salmon-pink: #febaaf;
+  --c-blue: #1964f6;
+  --c-red: #f15a5a;
+  --c-gray: #a9a7a7;
 
   /* Font styles */
   --font-heading: 'Koulen', sans-serif;
   --font-subheading: 'Syne', sans-serif;
-  --font-ingress: 'Inter', sans-serif;
   --font-body-copy: 'EB Garamond', serif;
   --font-handwriting: 'Fasthand', cursive;
 
   /* Font sizes */
-  --fs-heading: 1.3rem;
+  --fs-heading: 8rem;
   --fs-subheading: 1rem;
   --fs-paragraph-L: 3rem;
-  --fs-paragraph-M: 0.82rem;
+  --fs-paragraph-M: 1.2rem;
   --fs-paragraph-S: 0.76rem;
+  --fs-paragraph-XS: 0.5rem;
 }
 
 body {
@@ -35,30 +35,32 @@ body {
 }
 
 h1 {
+  font-family: var(--font-heading);
   font-size: var(--fs-heading);
+  font-weight: lighter;
+  line-height: 7rem;
 }
 
 h2 {
+  font-family: var(--font-subheading);
   font-size: var(--fs-subheading);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h3 {
+  font-family: var(--font-handwriting);
   font-size: var(--fs-paragraph-L);
 }
 
 p {
-  font-size: var(--fs-paragraph-M);
   font-family: var(--font-body-copy);
-}
-
-span {
   font-size: var(--fs-paragraph-S);
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
+span {
+  font-family: var(--font-ingress);
+  font-size: var(--fs-paragraph-S);
 }
 
 button {
@@ -78,8 +80,19 @@ select {
   border-style: none;
   color: var(--c-blue);
   font-family: var(--font-subheading);
+  margin-left: -0.2rem;
+  font-size: var(--fs-paragraph-M);
 }
 
-select:focus { 
-  outline: none; 
+select:focus {
+  outline: none;
+}
+
+label {
+  font-family: var(--font-ingress);
+  color: var(--c-gray);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--fs-paragraph-XS);
+  margin-bottom: 0.6rem;
 }
