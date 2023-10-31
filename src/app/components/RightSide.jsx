@@ -1,15 +1,23 @@
-function IdeasDisplay({ showIdeas, selectedIndustry, tempSelectedCategory, selectedCategoryDeadline, currentIdea }) {
+function IdeasDisplay({
+  showIdeas,
+  selectedIndustry,
+  tempSelectedCategory,
+  selectedCategoryDeadline,
+  currentIdea,
+}) {
   if (showIdeas) {
     return (
       <div>
-        <h2>Ideas for {selectedIndustry} - {tempSelectedCategory}</h2>
+        <h2>
+          Ideas for {selectedIndustry} - {tempSelectedCategory}
+        </h2>
         <p>Deadline: {selectedCategoryDeadline}</p>
         <p>Idea: {currentIdea}</p>
       </div>
-    );
+    )
   } else {
-    return null;
+    return null
   }
 }
 
-export default IdeasDisplay;
+export default IdeasDisplay

@@ -1,65 +1,65 @@
 'use client'
-import React, { useState } from 'react';
-import data from './assets/ideasData.json';
-import IdeasDisplay from '../components/RightSide';
-import ShowIdeasButton from './Button';
+import { useState } from 'react'
+import data from './assets/ideasData.json'
+import IdeasDisplay from '../components/RightSide'
+import ShowIdeasButton from './Button'
 
 export default function CreativeIdeas() {
-  const [selectedIndustry, setSelectedIndustry] = useState('Technology');
+  const [selectedIndustry, setSelectedIndustry] = useState('Technology')
   const [selectedCategory, setSelectedCategory] = useState(
-    data.industries.Technology[0].category
-  );
-  const [tempSelectedIndustry, setTempSelectedIndustry] = useState('Technology');
+    data.industries.Technology[0].category,
+  )
+  const [tempSelectedIndustry, setTempSelectedIndustry] = useState('Technology')
   const [tempSelectedCategory, setTempSelectedCategory] = useState(
-    data.industries.Technology[0].category
-  );
-  const [currentIdea, setCurrentIdea] = useState('');
-  const [selectedCategoryDeadline, setSelectedCategoryDeadline] = useState('');
-  const [showIdeas, setShowIdeas] = useState(false);
+    data.industries.Technology[0].category,
+  )
+  const [currentIdea, setCurrentIdea] = useState('')
+  const [selectedCategoryDeadline, setSelectedCategoryDeadline] = useState('')
+  const [showIdeas, setShowIdeas] = useState(false)
 
   const handleIndustryChange = (event) => {
-    setTempSelectedIndustry(event.target.value);
+    setTempSelectedIndustry(event.target.value)
   }
 
   const handleCategoryChange = (event) => {
-    setTempSelectedCategory(event.target.value);
+    setTempSelectedCategory(event.target.value)
   }
 
   const showIdeasOnClick = () => {
-    setSelectedIndustry(tempSelectedIndustry);
-    setSelectedCategory(tempSelectedCategory);
+    setSelectedIndustry(tempSelectedIndustry)
+    setSelectedCategory(tempSelectedCategory)
 
-    const selectedIndustryData = data.industries[tempSelectedIndustry];
-    let ideas = [];
-    let categoryDeadline = '';
-    let selectedCategoryData = null;
+    const selectedIndustryData = data.industries[tempSelectedIndustry]
+    let ideas = []
+    let categoryDeadline = ''
+    let selectedCategoryData = null
 
     if (selectedIndustryData) {
       selectedCategoryData = selectedIndustryData.find(
-        (item) => item.category === tempSelectedCategory
-      );
+        (item) => item.category === tempSelectedCategory,
+      )
       if (selectedCategoryData) {
-        ideas = selectedCategoryData.ideas;
-        categoryDeadline = selectedCategoryData.deadline;
+        ideas = selectedCategoryData.ideas
+        categoryDeadline = selectedCategoryData.deadline
       }
     }
 
-    setSelectedCategoryDeadline(categoryDeadline);
+    setSelectedCategoryDeadline(categoryDeadline)
 
     if (selectedCategoryData && ideas.length > 0) {
-      const randomIndex = Math.floor(Math.random() * ideas.length);
-      setCurrentIdea(ideas[randomIndex]);
+      const randomIndex = Math.floor(Math.random() * ideas.length)
+      setCurrentIdea(ideas[randomIndex])
     }
 
-    setShowIdeas(true);
+    setShowIdeas(true)
   }
 
   return (
     <div>
       <div>
-        <label htmlFor='industrySelect'>Select an Industry:</label>
+        <label htmlFor="industrySelect">Select an Industry:</label>
         <select
-          id='industrySelect'
+          id="industrySelect"
           value={tempSelectedIndustry}
           onChange={handleIndustryChange}
         >
@@ -72,9 +72,9 @@ export default function CreativeIdeas() {
       </div>
 
       <div>
-        <label htmlFor='categorySelect'>Select a Category:</label>
+        <label htmlFor="categorySelect">Select a Category:</label>
         <select
-          id='categorySelect'
+          id="categorySelect"
           value={tempSelectedCategory}
           onChange={handleCategoryChange}
         >
@@ -96,5 +96,5 @@ export default function CreativeIdeas() {
         currentIdea={currentIdea}
       />
     </div>
-  );
+  )
 }
