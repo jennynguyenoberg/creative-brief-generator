@@ -1,4 +1,4 @@
-function IdeasDisplay({
+export default function IdeasDisplay({
   showIdeas,
   selectedIndustry,
   tempSelectedCategory,
@@ -19,5 +19,3 @@ function IdeasDisplay({
     return null
   }
 }
-
-export default IdeasDisplay

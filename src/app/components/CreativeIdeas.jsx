@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react'
 import data from './assets/ideasData.json'
-import IdeasDisplay from '../components/RightSide'
-import ShowIdeasButton from './Button'
+import IdeasDisplay from '../components/IdeasDisplay'
+import Button from './Button'
 
 export default function CreativeIdeas() {
   const [selectedIndustry, setSelectedIndustry] = useState('Technology')
@@ -100,7 +100,7 @@ export default function CreativeIdeas() {
           selectedCategoryDeadline={selectedCategoryDeadline}
           currentIdea={currentIdea}
         />
-        <ShowIdeasButton onClick={showIdeasOnClick} />
+        <Button onClick={showIdeasOnClick} />
       </div>
       <footer>Footer</footer>
     </main>
