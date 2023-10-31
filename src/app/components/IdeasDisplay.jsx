@@ -8,14 +8,17 @@ export default function IdeasDisplay({
   if (showIdeas) {
     return (
       <div>
-        <h2>
+        {/* <h2>
           Ideas for {selectedIndustry} - {tempSelectedCategory}
-        </h2>
-        <p>Deadline: {selectedCategoryDeadline}</p>
-        <p>Idea: {currentIdea}</p>
+        </h2> */}
+        <span>You should</span>
+        <p>{currentIdea}</p>
+        <span>
+          You have {selectedCategoryDeadline} days to finish until the deadline.
+        </span>
       </div>
-    )
+    );
   } else {
-    return null
+    return null;
   }
 }
