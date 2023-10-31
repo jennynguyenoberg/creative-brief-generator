@@ -55,46 +55,54 @@ export default function CreativeIdeas() {
   }
 
   return (
-    <div>
+    <main>
+      <nav className=''>
+        <div>Logo</div>
+        <div>Menu</div>
+      </nav>
       <div>
-        <label htmlFor="industrySelect">Select an Industry:</label>
-        <select
-          id="industrySelect"
-          value={tempSelectedIndustry}
-          onChange={handleIndustryChange}
-        >
-          {Object.keys(data.industries).map((industry) => (
-            <option key={industry} value={industry}>
-              {industry}
-            </option>
-          ))}
-        </select>
-      </div>
+        <div>
+          <label htmlFor="industrySelect">Industry</label>
+          <select
+            id="industrySelect"
+            value={tempSelectedIndustry}
+            onChange={handleIndustryChange}
+          >
+            {Object.keys(data.industries).map((industry) => (
+              <option key={industry} value={industry}>
+                {industry}
+              </option>
+            ))}
+          </select>
+        </div>
 
+        <div>
+          <label htmlFor="categorySelect">Category</label>
+          <select
+            id="categorySelect"
+            value={tempSelectedCategory}
+            onChange={handleCategoryChange}
+          >
+            {data.industries[tempSelectedIndustry].map((item) => (
+              <option key={item.category} value={item.category}>
+                {item.category}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
       <div>
-        <label htmlFor="categorySelect">Select a Category:</label>
-        <select
-          id="categorySelect"
-          value={tempSelectedCategory}
-          onChange={handleCategoryChange}
-        >
-          {data.industries[tempSelectedIndustry].map((item) => (
-            <option key={item.category} value={item.category}>
-              {item.category}
-            </option>
-          ))}
-        </select>
+        <label>Creative idea</label>
+        <IdeasDisplay
+          showIdeas={showIdeas}
+          selectedIndustry={selectedIndustry}
+          tempSelectedCategory={tempSelectedCategory}
+          selectedCategoryDeadline={selectedCategoryDeadline}
+          currentIdea={currentIdea}
+        />
+        <ShowIdeasButton onClick={showIdeasOnClick} />
       </div>
-
-      <ShowIdeasButton onClick={showIdeasOnClick} />
-
-      <IdeasDisplay
-        showIdeas={showIdeas}
-        selectedIndustry={selectedIndustry}
-        tempSelectedCategory={tempSelectedCategory}
-        selectedCategoryDeadline={selectedCategoryDeadline}
-        currentIdea={currentIdea}
-      />
-    </div>
+      <footer>Footer</footer>
+    </main>
   )
 }
