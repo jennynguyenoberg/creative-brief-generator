@@ -3,7 +3,7 @@
     "Technology": [
       {
         "category": "Logo Design",
-        "deadline": "8 days",
+        "deadline": "8",
         "ideas": [
           "Design a logo for a cutting-edge artificial intelligence startup.",
           "Create an emblem for a futuristic tech company.",
@@ -35,7 +35,7 @@
       },
       {
         "category": "Website",
-        "deadline": "14 days",
+        "deadline": "14",
         "ideas": [
           "Design a user-friendly website for a mobile app development company.",
           "Create a landing page for a tech conference event.",
@@ -67,7 +67,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "10 days",
+        "deadline": "10",
         "ideas": [
           "Design a visual identity for a blockchain technology firm.",
           "Create branding elements for a cybersecurity software company.",
@@ -100,7 +100,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a technical whitepaper on the future of AI in healthcare.",
           "Produce a podcast episode discussing the impact of emerging tech trends.",
@@ -134,7 +134,7 @@
     "Food": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for a gourmet chocolate brand.",
           "Create a logo for a farm-to-table restaurant.",
@@ -166,7 +166,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for a craft beer brewery.",
           "Create a website for a local farmers' market.",
@@ -198,7 +198,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a vegan food product line.",
           "Create a visual identity for a coffee brand.",
@@ -230,7 +230,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a blog post on the benefits of organic farming.",
           "Produce a video explaining the process of artisanal chocolate making.",
@@ -264,7 +264,7 @@
     "Fashion": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for a luxury fashion brand.",
           "Create a logo for a sustainable fashion startup.",
@@ -296,7 +296,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for an online fashion store.",
           "Create a website for a fashion blog with a focus on vintage clothing.",
@@ -328,7 +328,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a branding concept for a streetwear clothing line.",
           "Create a visual identity for an eco-friendly fashion company.",
@@ -360,7 +360,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a blog post about the latest fashion trends.",
           "Produce an art installation for a fashion exhibition.",
@@ -394,7 +394,7 @@
     "Entertainment": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for a new entertainment production company.",
           "Create a logomark for a gaming studio.",
@@ -426,7 +426,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design an interactive website for a virtual reality gaming experience.",
           "Create a website for an online video streaming service.",
@@ -458,7 +458,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a film festival.",
           "Create a visual identity for a music label.",
@@ -490,7 +490,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a script for a comedy skit.",
           "Produce promotional materials for a local music concert.",
@@ -524,7 +524,7 @@
     "Sports": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for a youth soccer league.",
           "Create a logomark for a sports equipment store.",
@@ -556,7 +556,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for a sports news portal.",
           "Create a website for a local sports tournament.",
@@ -588,7 +588,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a sports apparel brand.",
           "Create a visual identity for a professional sports team.",
@@ -620,7 +620,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a sports article about the upcoming Olympic Games.",
           "Produce promotional materials for a charity run event.",
@@ -654,7 +654,7 @@
     "Education": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for an online learning platform.",
           "Create a logomark for a language learning app.",
@@ -686,7 +686,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for an e-learning platform.",
           "Create a website for a literacy promotion campaign.",
@@ -718,7 +718,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a college or university.",
           "Create a visual identity for a vocational training center.",
@@ -751,7 +751,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write an educational blog post about study tips and techniques.",
           "Produce an educational video explaining complex scientific concepts.",
@@ -785,7 +785,7 @@
     "Travel": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for a travel agency specializing in adventure tours.",
           "Create a logomark for a luxury cruise line.",
@@ -817,7 +817,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for a vacation rental platform.",
           "Create a website for a travel agency offering custom itineraries.",
@@ -849,7 +849,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a global travel booking website.",
           "Create a visual identity for a travel blog and vlog platform.",
@@ -881,7 +881,7 @@
       },
       {
         "category": "Random",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Write a travel blog post about eco-friendly travel tips.",
           "Produce a travel video exploring cultural experiences in a foreign country.",
@@ -915,7 +915,7 @@
     "Random": [
       {
         "category": "Logo Design",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a logo for an innovative startup of your choice.",
           "Create a logomark for an imaginary coffee brand.",
@@ -947,7 +947,7 @@
       },
       {
         "category": "Website",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design a user-friendly website for a virtual reality game that doesn't exist.",
           "Create a website for a museum of unicorns and mythical creatures.",
@@ -979,7 +979,7 @@
       },
       {
         "category": "Brand Identity",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Design branding elements for a company that specializes in time travel.",
           "Design branding elements for a company specializing in time-travel tourism.",
@@ -1011,7 +1011,7 @@
       },
       {
         "category": "Illustration",
-        "deadline": "6 days",
+        "deadline": "6",
         "ideas": [
           "Illustrate a fantasy book cover featuring dragons and wizards.",
           "Create a digital artwork of a cyberpunk cityscape.",
