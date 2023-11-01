@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import data from './assets/ideasData.json'
-import IdeasDisplay from '../components/IdeasDisplay'
+import IdeasDisplay from './IdeasDisplay'
 import Button from './Button'
 import styles from './styles.module.css'
 
@@ -56,54 +56,114 @@ export default function CreativeIdeas() {
   }
 
   return (
-    <main>
-      <nav className=''>
-        <div>Logo</div>
-        <div>Menu</div>
+    <main className={styles.main}>
+      <nav className={styles.nav}>
+        <div className={styles.logo}>
+          <h2>Ideaspire</h2>
+        </div>
+        <div className={styles.menu}>
+          <h2>Menu</h2>
+        </div>
       </nav>
-      <div className={styles.leftContainer}>
-        <div>
-          <label htmlFor="industrySelect">Industry</label>
-          <select
-            id="industrySelect"
-            value={tempSelectedIndustry}
-            onChange={handleIndustryChange}
-          >
-            {Object.keys(data.industries).map((industry) => (
-              <option key={industry} value={industry}>
-                {industry}
-              </option>
-            ))}
-          </select>
+
+      <div className={styles.hero}>
+        {/* RIGHT SIDE */}
+        <div className={styles.leftContainer}>
+          <div>
+            <h1>Running out of creative juice?</h1>
+            <h3 className={styles.tagline}>Say no more!</h3>
+          </div>
+          <div className={styles.choices}>
+            <div>
+              <label className={styles.label} htmlFor="industrySelect">
+                Industry
+              </label>
+              <select
+                id="industrySelect"
+                value={tempSelectedIndustry}
+                onChange={handleIndustryChange}
+              >
+                {Object.keys(data.industries).map((industry) => (
+                  <option key={industry} value={industry}>
+                    {industry}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className={styles.label} htmlFor="categorySelect">
+                Category
+              </label>
+              <select
+                id="categorySelect"
+                value={tempSelectedCategory}
+                onChange={handleCategoryChange}
+              >
+                {data.industries[tempSelectedIndustry].map((item) => (
+                  <option key={item.category} value={item.category}>
+                    {item.category}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <label htmlFor="categorySelect">Category</label>
-          <select
-            id="categorySelect"
-            value={tempSelectedCategory}
-            onChange={handleCategoryChange}
-          >
-            {data.industries[tempSelectedIndustry].map((item) => (
-              <option key={item.category} value={item.category}>
-                {item.category}
-              </option>
-            ))}
-          </select>
+        {/* LEFT SIDE */}
+        <div className={styles.rightContainer}>
+          <IdeasDisplay
+            showIdeas={showIdeas}
+            selectedIndustry={selectedIndustry}
+            tempSelectedCategory={tempSelectedCategory}
+            selectedCategoryDeadline={selectedCategoryDeadline}
+            currentIdea={currentIdea}
+          />
+          <Button onClick={showIdeasOnClick} />
         </div>
       </div>
-      <div className={styles.rightContainer}>
-        <label>Creative idea</label>
-        <IdeasDisplay
-          showIdeas={showIdeas}
-          selectedIndustry={selectedIndustry}
-          tempSelectedCategory={tempSelectedCategory}
-          selectedCategoryDeadline={selectedCategoryDeadline}
-          currentIdea={currentIdea}
-        />
-        <Button onClick={showIdeasOnClick} />
-      </div>
-      <footer>Footer</footer>
+
+      <footer className={styles.footer}>
+        <div className={styles.leftColumn}>
+          <div>
+            <h2>Ideaspire</h2>
+            <span className={styles.footerCopy}>
+              Fueling Your Creative Juice
+            </span>
+          </div>
+          <div>
+            Design and Development by Jenny Nguyen Öberg © 2023 All rights
+            reserved
+          </div>
+        </div>
+        <div className={styles.midddleColumn}>
+          <h2>Social</h2>
+          <div>
+            <ul className={styles.social}>
+              <li>LinkedIn</li>
+              <li>Instagram</li>
+              <li>Dribbble</li>
+              <li>Behance</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.rightColumn}>
+          <div>
+            <h2>Newsletter</h2>
+            <span className={styles.footerCopy}>
+              Be up to date with new ideas
+            </span>
+          </div>
+          <div>
+            <input
+              id="subscribe"
+              placeholder="Type your email"
+              disabled={true}
+            />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }

@@ -51,16 +51,17 @@ h2 {
 h3 {
   font-family: var(--font-handwriting);
   font-size: var(--fs-paragraph-L);
+  color: var(--c-red);
 }
 
 p {
   font-family: var(--font-body-copy);
-  font-size: var(--fs-paragraph-S);
+  font-size: var(--fs-paragraph-M);
 }
 
 span {
-  font-family: var(--font-ingress);
-  font-size: var(--fs-paragraph-S);
+  font-family: var(--font-subheading);
+  font-size: var(--fs-paragraph-L);
 }
 
 button {
@@ -69,8 +70,9 @@ button {
   border-style: none;
   color: var(--c-blue);
   font-family: var(--font-subheading);
-  font-size: var(--fs-paragraph-S);
+  font-size: var(--fs-paragraph-M);
   font-weight: 600;
+  line-height: 0.4rem;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -80,8 +82,8 @@ select {
   border-style: none;
   color: var(--c-blue);
   font-family: var(--font-subheading);
-  margin-left: -0.2rem;
   font-size: var(--fs-paragraph-M);
+  margin-left: -0.2rem;
 }
 
 select:focus {
@@ -89,10 +91,23 @@ select:focus {
 }
 
 label {
-  font-family: var(--font-ingress);
   color: var(--c-gray);
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: var(--font-ingress);
   font-size: var(--fs-paragraph-XS);
+  font-weight: 700;
   margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: transparent;
+  border-bottom: 1px solid var(--c-blue);
+  border: none;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--c-blue);
+  font-family: var(--font-subheading);
+  font-size: var(--fs-subheading);
 }
