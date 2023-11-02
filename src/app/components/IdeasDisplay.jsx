@@ -1,4 +1,4 @@
-import styles from './rightSide.module.css'
+import styles from './ideaDisplay.module.css'
 
 export default function IdeasDisplay({
   showIdeas,

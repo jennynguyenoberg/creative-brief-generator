@@ -154,7 +154,7 @@ export default function CreativeIdeas() {
               Be up to date with new ideas
             </span>
           </div>
-          <div>
+          <div className={styles.input}>
             <input
               id="subscribe"
               placeholder="Type your email"

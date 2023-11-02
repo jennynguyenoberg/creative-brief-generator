@@ -112,3 +112,7 @@ ul.social {
 .footerCopy {
   font-size: 0.9rem;
 }
+
+.input {
+  border-bottom: 1px solid var(--c-blue);
+}
