@@ -5,7 +5,7 @@ A React-based web application that helps you find creative ideas for various ind
 <div align="center">
   <img 
     alt="Image of website" 
-    src="https://github.com/jennynguyenoberg/creative-brief-generator/assets/116844306/70bba938-2224-46b7-b0bd-0b839afea296" width="100%" />
+    src="https://github.com/jennynguyenoberg/creative-brief-generator/assets/116844306/6c18eb53-c15c-46cd-9b9e-188013887bea" width="100%" />
 </div>
 
 
