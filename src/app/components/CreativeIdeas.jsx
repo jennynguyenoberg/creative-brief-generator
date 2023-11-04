@@ -1,11 +1,16 @@
 'use client'
 import { useState } from 'react'
 import data from './assets/ideasData.json'
-import IdeasDisplay from './IdeasDisplay'
-import Button from './Button'
+import IdeasDisplay from './IdeaDisplay/IdeasDisplay'
+import Button from '../components/Button/Button'
 import styles from './styles.module.css'
+import stylesFooter from '../components/Footer/footer.module.css'
+import stylesNavbar from '../components/Navbar/navbar.module.css'
+import Footer from './Footer/Footer'
+import Navbar from './Navbar/Navbar'
 
 export default function CreativeIdeas() {
+  const [isButtonClicked, setIsButtonClicked] = useState(false)
   const [selectedIndustry, setSelectedIndustry] = useState('Technology')
   const [selectedCategory, setSelectedCategory] = useState(
     data.industries.Technology[0].category,
@@ -53,21 +58,17 @@ export default function CreativeIdeas() {
     }
 
     setShowIdeas(true)
+    setIsButtonClicked(true)
   }
 
   return (
     <main className={styles.main}>
-      <nav className={styles.nav}>
-        <div className={styles.logo}>
-          <h2>Ideaspire</h2>
-        </div>
-        <div className={styles.menu}>
-          <h2>Menu</h2>
-        </div>
+      <nav className={stylesNavbar.nav}>
+        <Navbar />
       </nav>
 
       <div className={styles.hero}>
-        {/* RIGHT SIDE */}
+        {/* LEFT SIDE */}
         <div className={styles.leftContainer}>
           <div>
             <h1>Running out of creative juice?</h1>
@@ -75,7 +76,7 @@ export default function CreativeIdeas() {
           </div>
           <div className={styles.choices}>
             <div>
-              <label className={styles.label} htmlFor="industrySelect">
+              <label className={styles.category} htmlFor="industrySelect">
                 Industry
               </label>
               <select
@@ -92,7 +93,7 @@ export default function CreativeIdeas() {
             </div>
 
             <div>
-              <label className={styles.label} htmlFor="categorySelect">
+              <label className={styles.category} htmlFor="categorySelect">
                 Category
               </label>
               <select
@@ -110,7 +111,7 @@ export default function CreativeIdeas() {
           </div>
         </div>
 
-        {/* LEFT SIDE */}
+        {/* RIGHT SIDE */}
         <div className={styles.rightContainer}>
           <IdeasDisplay
             showIdeas={showIdeas}
@@ -119,50 +120,21 @@ export default function CreativeIdeas() {
             selectedCategoryDeadline={selectedCategoryDeadline}
             currentIdea={currentIdea}
           />
-          <Button onClick={showIdeasOnClick} />
+          {isButtonClicked ? null : (
+            <span className={styles.introText}>
+              Generate a unique design concept. Simply choose the job type and
+              industry that interest you, then click {'"'}Generate.{'"'}
+            </span>
+          )}
+          <div
+            className={`${styles.btn} ${isButtonClicked ? styles.clicked : ''}`}
+          >
+            <Button onClick={showIdeasOnClick} />
+          </div>
         </div>
       </div>
-
-      <footer className={styles.footer}>
-        <div className={styles.leftColumn}>
-          <div>
-            <h2>Ideaspire</h2>
-            <span className={styles.footerCopy}>
-              Fueling Your Creative Juice
-            </span>
-          </div>
-          <div>
-            Design and Development by Jenny Nguyen Öberg © 2023 All rights
-            reserved
-          </div>
-        </div>
-        <div className={styles.midddleColumn}>
-          <h2>Social</h2>
-          <div>
-            <ul className={styles.social}>
-              <li>LinkedIn</li>
-              <li>Instagram</li>
-              <li>Dribbble</li>
-              <li>Behance</li>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.rightColumn}>
-          <div>
-            <h2>Newsletter</h2>
-            <span className={styles.footerCopy}>
-              Be up to date with new ideas
-            </span>
-          </div>
-          <div className={styles.input}>
-            <input
-              id="subscribe"
-              placeholder="Type your email"
-              disabled={true}
-            />
-            <button>Subscribe</button>
-          </div>
-        </div>
+      <footer className={stylesFooter.footer}>
+        <Footer />
       </footer>
     </main>
   )

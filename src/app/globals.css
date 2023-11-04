@@ -12,7 +12,7 @@
   --bg-c-salmon-pink: #febaaf;
   --c-blue: #1964f6;
   --c-red: #f15a5a;
-  --c-gray: #a9a7a7;
+  --c-gray: #6c6c6c;
 
   /* Font styles */
   --font-heading: 'Koulen', sans-serif;
@@ -66,7 +66,7 @@ span {
 
 button {
   /* Styling for ALL dropdown buttons */
-  background-color: var(--bg-c-light-pink);
+  background-color: transparent;
   border-style: none;
   color: var(--c-blue);
   font-family: var(--font-subheading);
