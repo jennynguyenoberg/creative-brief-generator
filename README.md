@@ -1,6 +1,6 @@
 # Ideaspire | Fueling Your Creative Juice
 
-A React-based web application that helps you find creative ideas for various industries and categories.
+A React-based web application that helps you find creative ideas for various industries and categories, born out of a period of creative drought.
 
 <div align="center">
   <img 
@@ -10,7 +10,7 @@ A React-based web application that helps you find creative ideas for various ind
 
 
 ## Description
-The Creative Ideas Generator is a simple web application that allows you to choose an industry and category, and it will provide you with a random idea related to that combination. It's designed to help professionals, creators, and coder find unique concepts for their up coming projects or assignments.
+The Creative Ideas Generator is a simple web application that allows you to choose an industry and category, and it will provide you with a random idea related to that combination. It's designed to help professionals, creators, and coders find unique concepts for their up coming projects or assignments.
 
 ## Table of Contents
 
