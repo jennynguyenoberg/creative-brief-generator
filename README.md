@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ideaspire | Fueling Your Creative Juice
+
+A React-based web application that helps you find creative ideas for various industries and categories.
+
+<div align="center">
+  <img 
+    alt="Image of website" 
+    src="https://github.com/jennynguyenoberg/creative-brief-generator/assets/116844306/70bba938-2224-46b7-b0bd-0b839afea296" width="100%" />
+</div>
+
+
+## Description
+The Creative Ideas Generator is a simple web application that allows you to choose an industry and category, and it will provide you with a random idea related to that combination. It's designed to help professionals, creators, and coder find unique concepts for their up coming projects or assignments.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [To-Do List](#to-do-list)
+
+## Features
+
+- Select an industry and category to narrow down your idea search.
+- Receive random creative ideas from the selected industry and category.
+- View information about the selected category and its associated deadline.
+- User-friendly interface and intuitive design.
+
+## Technologies Used
+- React (Next.js)
+- JSON: Data is loaded from a JSON file.
+- Node.js and npm: Used for package management and development server.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone git@github.com:jennynguyenoberg/creative-brief-generator.git
+2. Navigate to the project directory:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   cd your-project
+3. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm install
+4. Start the development server:
 
-## Learn More
+   ```bash
+   npm run dev
+## Color Palette
 
-To learn more about Next.js, take a look at the following resources:
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Light Pink       | ![#f9dcd7](https://via.placeholder.com/10/f9dcd7?text=+) `#f9dcd7` |
+| Salmon Pink          | ![#febaaf](https://via.placeholder.com/10/febaaf?text=+) `#febaaf` |
+| Blue         | ![#1964f6](https://via.placeholder.com/10/1964f6?text=+) `#1964f6` |
+| Red     | ![#f15a5a](https://via.placeholder.com/10/f15a5a?text=+) `#f15a5a` |
+| Gray          | ![#6c6c6c](https://via.placeholder.com/10/6c6c6c?text=+) `#6c6c6c` |
+## To-Do List
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Add Description, Packaging and Coding items to data array
+- [ ] Animation paper plane illustration with Framer Motion
