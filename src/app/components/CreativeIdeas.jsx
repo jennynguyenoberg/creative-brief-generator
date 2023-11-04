@@ -8,6 +8,7 @@ import stylesFooter from '../components/Footer/footer.module.css'
 import stylesNavbar from '../components/Navbar/navbar.module.css'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
+import Image from 'next/image'
 
 export default function CreativeIdeas() {
   const [isButtonClicked, setIsButtonClicked] = useState(false)
@@ -63,11 +64,20 @@ export default function CreativeIdeas() {
 
   return (
     <main className={styles.main}>
+      <div className={styles.illustrationLeft}>
+      <Image
+          src="/paper-plane.svg"
+          alt="Paper plane trail illustration"
+          width={830}
+          height={830}
+        />
+        </div>
+
       <nav className={stylesNavbar.nav}>
         <Navbar />
       </nav>
-
       <div className={styles.hero}>
+       
         {/* LEFT SIDE */}
         <div className={styles.leftContainer}>
           <div>
@@ -131,6 +141,14 @@ export default function CreativeIdeas() {
           >
             <Button onClick={showIdeasOnClick} />
           </div>
+        <div className={styles.illustrationRight}>
+        <Image
+          src="/paper-plane-reverse.svg"
+          alt="Paper plane trail illustration"
+          width={350}
+          height={350}
+        />
+        </div>
         </div>
       </div>
       <footer className={stylesFooter.footer}>

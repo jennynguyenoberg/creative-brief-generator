@@ -64,6 +64,18 @@
   text-align: center;
 }
 
+.illustrationLeft {
+  position: absolute;
+  left: 0;
+  top: 13rem;
+}
+
+.illustrationRight {
+  position: absolute;
+  right: -.1rem;
+  top: 1.5rem;
+}
+
 @media (max-width: 1290px) {
   .main {
     display: grid;
@@ -93,6 +105,10 @@
   .introText {
     text-align: left;
     padding: 0 0 3rem;
+  }
+
+  .illustrationLeft {
+    display: none;
   }
 }
 

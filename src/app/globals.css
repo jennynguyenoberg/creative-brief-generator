@@ -10,6 +10,7 @@
   /* Primary colors */
   --bg-c-light-pink: #f9dcd7;
   --bg-c-salmon-pink: #febaaf;
+  --bg-c-dark-pink: #FE9F8E;
   --c-blue: #1964f6;
   --c-red: #f15a5a;
   --c-gray: #6c6c6c;
@@ -82,7 +83,7 @@ button:hover {
 }
 
 select {
-  background-color: var(--bg-c-light-pink);
+  background-color: transparent;
   border-style: none;
   color: var(--c-blue);
   font-family: var(--font-subheading);
