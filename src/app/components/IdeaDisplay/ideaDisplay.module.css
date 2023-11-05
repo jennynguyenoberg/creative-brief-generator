@@ -69,3 +69,19 @@
     width: 100%;
   }
 }
+
+@media (max-width: 430px) {
+  .deadline {
+    font-size: 0.7rem;
+  }
+
+  .ideaContainer {
+    padding: 0;
+    width: 95%;
+  }
+
+  .ideaContainer span{
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+  }
+}

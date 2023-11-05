@@ -97,7 +97,7 @@ select:focus {
 
 label {
   color: var(--c-gray);
-  font-family: var(--font-ingress);
+  font-family: var(--font-subheading);
   font-size: var(--fs-paragraph-XS);
   font-weight: 700;
   margin-bottom: 0.6rem;

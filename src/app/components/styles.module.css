@@ -56,7 +56,7 @@
 }
 
 .clicked {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 .introText {
@@ -65,8 +65,8 @@
 }
 
 .illustrationLeft {
-  position: absolute;
   left: 0;
+  position: absolute;
   top: 13rem;
 }
 
@@ -92,9 +92,9 @@
   }
 
   .hero > div:nth-child(2) {
-    padding: 3rem;
-    display: flex;
     align-items: flex-start;
+    display: flex;
+    padding: 3rem;
   }
 
   .tagline {
@@ -103,8 +103,8 @@
   }
 
   .introText {
+    padding: 0 0 2rem;
     text-align: left;
-    padding: 0 0 3rem;
   }
 
   .illustrationLeft {
@@ -137,5 +137,53 @@
 @media (max-width: 500px) {
   .hero h1 {
     font-size: 7.8rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+    width: 90%;
+  }
+
+  .leftContainer {
+    padding: 0;
+  }
+
+  .tagline {
+    font-size: 2rem;
+    margin-top: -3rem;
+    padding-left: 6rem;
+  }
+
+  .introText {
+    font-size: 2rem;
+    width: 95%;
+  }
+
+  .choices {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+    z-index: 999;
+  }
+
+  .choices select{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+.hero h1 {
+    font-size: 5.25rem;
+    line-height: 4.5rem;
+    width: 90%;
+  }
+
+  .choices {
+    display: flex;
+    gap: 2rem;
   }
 }
